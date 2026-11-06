@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trang chủ | SoundWave</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <nav class="wrap nav" aria-label="Điều hướng chính">
+      <a class="logo" href="index.html">🎧 SoundWave</a>
+      <ul><li><a href="index.html" aria-current=page>Trang chủ</a></li><li><a href="search.html">Tìm kiếm</a></li><li><a href="song-detail.html">Bài hát</a></li><li><a href="artist-songs.html">Ca sĩ</a></li><li><a href="composer-songs.html">Nhạc sĩ</a></li><li><a href="album-songs.html">Album</a></li><li><a href="detail.html">Tin tức</a></li><li><a href="about.html">Giới thiệu</a></li><li><a href="contact.html">Liên hệ</a></li></ul>
+    </nav>
+  </header>
+  <main class="wrap">
+<section class="hero"><h1>Âm nhạc từ những nghệ sĩ Indie bạn chưa kịp biết tên</h1><p>Nghe, khám phá và theo dõi giọng ca độc lập mỗi ngày.</p><p><a class="btn" href="search.html">Khám phá ngay</a> <a class="btn ghost" href="#premium">Đăng ký Premium</a></p></section>
+<section><h2>Top Charts tuần này</h2><div class="scroll"><table><thead><tr><th>#</th><th>Bài hát</th><th>Thể loại</th></tr></thead><tbody><tr><td>1</td><td><a href="song-detail.html">Chẳng Ai Hiểu Về Tình Yêu</a></td><td>Indie</td></tr><tr><td>2</td><td><a href="song-detail.html">Gái Tây Gốc Việt Remix</a></td><td>Remix</td></tr><tr><td>3</td><td><a href="song-detail.html">Night Cruising</a></td><td>Chill</td></tr><tr><td>4</td><td><a href="song-detail.html">Thương Nhau Đến Thế Drill</a></td><td>Drill</td></tr></tbody></table></div></section>
+<section><h2>Chuyên mục nổi bật</h2><div class="grid"><a class="cat" href="search.html">Indie</a><a class="cat" href="search.html">Lo-Fi Học bài</a><a class="cat" href="search.html">EDM</a><a class="cat" href="search.html">Acoustic</a></div></section>
+<section id="premium"><h2>Gói Premium</h2><div class="grid three"><article class="card"><h3>Free</h3><p>0đ, có quảng cáo</p></article><article class="card hot"><h3>Premium</h3><p>59.000đ/tháng, nghe offline, không quảng cáo</p></article><article class="card"><h3>Student</h3><p>29.000đ/tháng cho sinh viên</p></article></div></section>
+  </main>
+  <footer class="foot">
+    <p>© 2026 SoundWave · <a href="policy-terms.html">Chính sách &amp; Điều khoản</a> · <a href="contact.html">Liên hệ</a></p>
+  </footer>
+  <div class="player" aria-label="Trình phát nhạc">
+    <audio id="audio-player" preload="metadata" src="1.mp3"></audio>
+    <button class="play" type="button" data-audio-play aria-label="Phát nhạc" aria-pressed="false">▶</button>
+    <span><b>Chẳng Ai Hiểu Về Tình Yêu</b></span>
+    <input class="progress" id="audio-progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Tiến trình bài hát">
+    <input class="volume" id="audio-volume" type="range" min="0" max="1" value="1" step="0.05" aria-label="Âm lượng">
+    <small class="audio-status" id="audio-status" role="status"></small>
+  </div>
+  <script src="player.js"></script>
+</body>
+</html>

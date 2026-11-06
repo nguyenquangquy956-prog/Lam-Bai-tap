@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nhạc sĩ | SoundWave</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <nav class="wrap nav" aria-label="Điều hướng chính">
+      <a class="logo" href="index.html">🎧 SoundWave</a>
+      <ul><li><a href="index.html">Trang chủ</a></li><li><a href="search.html">Tìm kiếm</a></li><li><a href="song-detail.html">Bài hát</a></li><li><a href="artist-songs.html">Ca sĩ</a></li><li><a href="composer-songs.html" aria-current=page>Nhạc sĩ</a></li><li><a href="album-songs.html">Album</a></li><li><a href="detail.html">Tin tức</a></li><li><a href="about.html">Giới thiệu</a></li><li><a href="contact.html">Liên hệ</a></li></ul>
+    </nav>
+  </header>
+  <main class="wrap">
+<section class="profile"><div><h1>Nhạc sĩ sáng tác</h1><p>Thông tin tác giả của 5 bài hát đang có trên SoundWave.</p></div></section>
+<section><h2>Tác giả các bài nhạc</h2><div class="grid author-grid"><article class="card"><img class="author-avatar" src="1.jpeg" alt="Ảnh tác giả Vương Anh Tú"><h3>Vương Anh Tú</h3><p>Chẳng Ai Hiểu Về Tình Yêu</p></article><article class="card"><img class="author-avatar" src="2.jpeg" alt="Ảnh tác giả Phan Viết Tính"><h3>Phan Viết Tính</h3><p>Gái Tây Gốc Việt Remix</p></article><article class="card"><img class="author-avatar" src="3.jpeg" alt="Ảnh tác giả Shinji Sato"><h3>Shinji Sato</h3><p>Night Cruising</p></article><article class="card"><img class="author-avatar" src="4.jpeg" alt="Ảnh tác giả Gia Huy"><h3>Gia Huy</h3><p>Thương Nhau Đến Thế Drill</p></article><article class="card"><img class="author-avatar" src="6.jpeg" alt="Ảnh nghệ sĩ Fetty Wap"><h3>Fetty Wap</h3><p>Trap Queen · Nhà sản xuất: Tony Fadd</p></article></div></section>
+  </main>
+  <footer class="foot">
+    <p>© 2026 SoundWave · <a href="policy-terms.html">Chính sách &amp; Điều khoản</a> · <a href="contact.html">Liên hệ</a></p>
+  </footer>
+  <div class="player" aria-label="Trình phát nhạc">
+    <audio id="audio-player" preload="metadata" src="1.mp3"></audio>
+    <button class="play" type="button" data-audio-play aria-label="Phát nhạc" aria-pressed="false">▶</button>
+    <span><b>Chẳng Ai Hiểu Về Tình Yêu</b></span>
+    <input class="progress" id="audio-progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Tiến trình bài hát">
+    <input class="volume" id="audio-volume" type="range" min="0" max="1" value="1" step="0.05" aria-label="Âm lượng">
+    <small class="audio-status" id="audio-status" role="status"></small>
+  </div>
+  <script src="player.js"></script>
+</body>
+</html>

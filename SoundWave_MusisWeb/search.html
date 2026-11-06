@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tìm kiếm bài hát | SoundWave</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <nav class="wrap nav" aria-label="Điều hướng chính">
+      <a class="logo" href="index.html">🎧 SoundWave</a>
+      <ul><li><a href="index.html">Trang chủ</a></li><li><a href="search.html" aria-current=page>Tìm kiếm</a></li><li><a href="song-detail.html">Bài hát</a></li><li><a href="artist-songs.html">Ca sĩ</a></li><li><a href="composer-songs.html">Nhạc sĩ</a></li><li><a href="album-songs.html">Album</a></li><li><a href="detail.html">Tin tức</a></li><li><a href="about.html">Giới thiệu</a></li><li><a href="contact.html">Liên hệ</a></li></ul>
+    </nav>
+  </header>
+  <main class="wrap">
+<section><h1>Tìm kiếm bài hát</h1>
+<form class="filter" onsubmit="return false"><input type="search" placeholder="Tên bài hát, ca sĩ, tác giả…" aria-label="Từ khóa"><select aria-label="Thể loại"><option>Mọi thể loại</option><option>Indie</option><option>Lo-Fi</option><option>EDM</option><option>Acoustic</option></select><select aria-label="Năm phát hành"><option>Mọi năm</option><option>2026</option><option>2025</option></select><select aria-label="Sắp xếp"><option>Mới nhất</option><option>Nghe nhiều nhất</option></select><button class="btn">Tìm</button></form>
+<p>Tìm thấy <b>5</b> bài hát</p><div class="grid"><article class="card" data-track-index="0"><a href="song-detail.html?track=0"><div class="cv cover cover-love"></div><h3>Chẳng Ai Hiểu Về Tình Yêu</h3></a><p class="author"><img src="1.jpeg" alt="Ảnh tác giả Vương Anh Tú">Tác giả: Vương Anh Tú</p></article><article class="card" data-track-index="1"><a href="song-detail.html?track=1"><div class="cv cover cover-gai"></div><h3>Gái Tây Gốc Việt Remix</h3></a><p class="author"><img src="2.jpeg" alt="Ảnh tác giả Phan Viết Tính">Tác giả: Phan Viết Tính</p></article><article class="card" data-track-index="2"><a href="song-detail.html?track=2"><div class="cv cover cover-night"></div><h3>Night Cruising</h3></a><p class="author"><img src="3.jpeg" alt="Ảnh tác giả Shinji Sato">Tác giả: Shinji Sato</p></article><article class="card" data-track-index="3"><a href="song-detail.html?track=3"><div class="cv cover cover-drill"></div><h3>Thương Nhau Đến Thế Drill</h3></a><p class="author"><img src="4.jpeg" alt="Ảnh tác giả Gia Huy">Tác giả: Gia Huy</p></article><article class="card" data-track-index="4"><a href="song-detail.html?track=4"><div class="cv cover cover-trap"></div><h3>Trap Queen</h3></a><p class="author"><img src="6.jpeg" alt="Ảnh nghệ sĩ Fetty Wap">Tác giả / Nghệ sĩ: Fetty Wap · Nhà sản xuất: Tony Fadd</p></article></div></section>
+  </main>
+  <footer class="foot">
+    <p>© 2026 SoundWave · <a href="policy-terms.html">Chính sách &amp; Điều khoản</a> · <a href="contact.html">Liên hệ</a></p>
+  </footer>
+  <div class="player" aria-label="Trình phát nhạc">
+    <audio id="audio-player" preload="metadata" src="1.mp3"></audio>
+    <button class="play" type="button" data-audio-play aria-label="Phát nhạc" aria-pressed="false">▶</button>
+    <span><b>Chẳng Ai Hiểu Về Tình Yêu</b></span>
+    <input class="progress" id="audio-progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Tiến trình bài hát">
+    <input class="volume" id="audio-volume" type="range" min="0" max="1" value="1" step="0.05" aria-label="Âm lượng">
+    <small class="audio-status" id="audio-status" role="status"></small>
+  </div>
+  <script src="player.js"></script>
+</body>
+</html>

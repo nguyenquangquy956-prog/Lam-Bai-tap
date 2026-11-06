@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liên hệ & Đóng góp | SoundWave</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <nav class="wrap nav" aria-label="Điều hướng chính">
+      <a class="logo" href="index.html">🎧 SoundWave</a>
+      <ul><li><a href="index.html">Trang chủ</a></li><li><a href="search.html">Tìm kiếm</a></li><li><a href="song-detail.html">Bài hát</a></li><li><a href="artist-songs.html">Ca sĩ</a></li><li><a href="composer-songs.html">Nhạc sĩ</a></li><li><a href="album-songs.html">Album</a></li><li><a href="detail.html">Tin tức</a></li><li><a href="about.html">Giới thiệu</a></li><li><a href="contact.html" aria-current=page>Liên hệ</a></li></ul>
+    </nav>
+  </header>
+  <main class="wrap">
+<section><h1>Liên hệ &amp; Đóng góp</h1>
+<form class="contact" onsubmit="alert('Cảm ơn bạn, SoundWave sẽ phản hồi sớm!');return false"><label>Họ tên<input name="name" required></label><label>Email<input type="email" name="email" required></label><label>Loại yêu cầu<select><option>Nghệ sĩ hợp tác</option><option>Góp ý</option><option>Hỗ trợ Premium</option></select></label><label>Nội dung<textarea rows="5" required></textarea></label><button class="btn">Gửi</button></form></section>
+<aside><h2>Thông tin hỗ trợ</h2><p>📞 Hotline: 1900 1234<br>✉ hello@soundwave.vn</p><iframe title="Bản đồ Studio SoundWave" loading="lazy" src="https://maps.google.com/maps?q=Hanoi&output=embed"></iframe></aside>
+  </main>
+  <footer class="foot">
+    <p>© 2026 SoundWave · <a href="policy-terms.html">Chính sách &amp; Điều khoản</a> · <a href="contact.html">Liên hệ</a></p>
+  </footer>
+  <div class="player" aria-label="Trình phát nhạc">
+    <audio id="audio-player" preload="metadata" src="1.mp3"></audio>
+    <button class="play" type="button" data-audio-play aria-label="Phát nhạc" aria-pressed="false">▶</button>
+    <span><b>Chẳng Ai Hiểu Về Tình Yêu</b></span>
+    <input class="progress" id="audio-progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Tiến trình bài hát">
+    <input class="volume" id="audio-volume" type="range" min="0" max="1" value="1" step="0.05" aria-label="Âm lượng">
+    <small class="audio-status" id="audio-status" role="status"></small>
+  </div>
+  <script src="player.js"></script>
+</body>
+</html>

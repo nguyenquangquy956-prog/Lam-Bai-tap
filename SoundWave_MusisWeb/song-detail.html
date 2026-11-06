@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chẳng Ai Hiểu Về Tình Yêu | SoundWave</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <nav class="wrap nav" aria-label="Điều hướng chính">
+      <a class="logo" href="index.html">🎧 SoundWave</a>
+      <ul><li><a href="index.html">Trang chủ</a></li><li><a href="search.html">Tìm kiếm</a></li><li><a href="song-detail.html" aria-current=page>Bài hát</a></li><li><a href="artist-songs.html">Ca sĩ</a></li><li><a href="composer-songs.html">Nhạc sĩ</a></li><li><a href="album-songs.html">Album</a></li><li><a href="detail.html">Tin tức</a></li><li><a href="about.html">Giới thiệu</a></li><li><a href="contact.html">Liên hệ</a></li></ul>
+    </nav>
+  </header>
+  <main class="wrap">
+<div class="layout"><article>
+<section class="banner"><div class="cv cover cover-love" data-track-cover></div><div><img class="author-avatar" data-track-author-image src="1.jpeg" alt="Ảnh tác giả Vương Anh Tú"><h1 data-track-title>Chẳng Ai Hiểu Về Tình Yêu</h1><p>Tác giả: <span data-track-author>Vương Anh Tú</span></p><button class="btn" type="button" data-audio-play aria-label="Phát nhạc" aria-pressed="false">▶ Phát</button></div></section>
+<section><h2>Lời bài hát</h2><pre class="lyrics" data-track-lyrics></pre></section></article>
+<aside><h2>Danh sách phát</h2><p class="notice">Đang phát các bài nhạc đã tải lên SoundWave.</p></aside></div>
+  </main>
+  <footer class="foot">
+    <p>© 2026 SoundWave · <a href="policy-terms.html">Chính sách &amp; Điều khoản</a> · <a href="contact.html">Liên hệ</a></p>
+  </footer>
+  <div class="player" aria-label="Trình phát nhạc">
+    <audio id="audio-player" preload="metadata" src="1.mp3"></audio>
+    <button class="play" type="button" data-audio-play aria-label="Phát nhạc" aria-pressed="false">▶</button>
+    <span><b>Chẳng Ai Hiểu Về Tình Yêu</b></span>
+    <input class="progress" id="audio-progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Tiến trình bài hát">
+    <input class="volume" id="audio-volume" type="range" min="0" max="1" value="1" step="0.05" aria-label="Âm lượng">
+    <small class="audio-status" id="audio-status" role="status"></small>
+  </div>
+  <script src="player.js"></script>
+</body>
+</html>
